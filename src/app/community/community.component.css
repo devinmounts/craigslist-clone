@@ -1,0 +1,13 @@
+.grid-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1px 1px;
+    grid-template-areas: "sidebar listings listings listings listings" "sidebar listings listings listings listings" "sidebar listings listings listings listings" "sidebar listings listings listings listings" "sidebar listings listings listings listings";
+  }
+  
+  .sidebar { grid-area: sidebar; }
+  
+  .listings { grid-area: listings; }
+  
