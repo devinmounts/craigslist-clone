@@ -29,4 +29,54 @@
   .center-main { grid-area: center-main; }
   
   .right-main { grid-area: right-main; }
+
+  .left-col{
+      background-color: aquamarine;
+      border: red, 3px;
+      margin: 5px;
+      padding: 5px;
+  }
+
+  .header{
+    background-color: aquamarine;
+    border: red, 3px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.right-col{
+    background-color: aquamarine;
+    border: red, 3px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.main{
+    background-color: aquamarine;
+    border: red, 3px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.left-main{
+    background-color: lightcoral;
+    border: red, 3px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.right-main{
+    background-color: lightcoral;
+    border: red, 3px;
+    margin: 5px;
+    padding: 5px;
+}
+.center-main{
+    background-color: lightcoral;
+    border: red, 3px;
+    margin: 5px;
+    padding: 5px;
+}
+
+
   
