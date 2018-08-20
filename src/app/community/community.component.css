@@ -10,4 +10,9 @@
   .sidebar { grid-area: sidebar; }
   
   .listings { grid-area: listings; }
+
+  .pic-bool {
+    color: orange;
+    font-size: 10pt;
+  }
   

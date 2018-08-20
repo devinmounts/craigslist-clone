@@ -7,6 +7,10 @@ import { HomeComponent } from './home/home.component';
 import { routing } from './app.routing';
 import { CommunityComponent } from './community/community.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { DetailsComponent } from './details/details.component';
+import { CommunityPipe } from './community.pipe';
+import { ServicesComponent } from './services/services.component';
+import { ServicesDetailsComponent } from './services-details/services-details.component';
 
 
 @NgModule({
@@ -14,7 +18,11 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppComponent,
     HomeComponent,
     CommunityComponent,
-    NavbarComponent
+    NavbarComponent,
+    DetailsComponent,
+    CommunityPipe,
+    ServicesComponent,
+    ServicesDetailsComponent
   ],
   imports: [
     BrowserModule,
