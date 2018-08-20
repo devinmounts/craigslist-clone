@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 
 import { AppComponent } from './app.component';
@@ -9,9 +12,17 @@ import { CommunityComponent } from './community/community.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DetailsComponent } from './details/details.component';
 import { CommunityPipe } from './community.pipe';
+import { ServicesPipe } from './services.pipe';
 import { ServicesComponent } from './services/services.component';
 import { ServicesDetailsComponent } from './services-details/services-details.component';
 
+
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 @NgModule({
   declarations: [
@@ -22,11 +33,14 @@ import { ServicesDetailsComponent } from './services-details/services-details.co
     DetailsComponent,
     CommunityPipe,
     ServicesComponent,
-    ServicesDetailsComponent
+    ServicesDetailsComponent,
+    ServicesPipe
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
