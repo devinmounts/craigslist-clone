@@ -1,0 +1,98 @@
+{ "listings": [{
+    "id": 1,
+    "title": "Looking for a friend",
+    "postingDate": "August 20, 2018",
+    "details": "Does anyone want to be my friend?",
+    "photo": false,
+    "category": "community",
+    "address": "123 Ryan's House St. Lonely,OR"
+  }, {
+    "id": 2,
+    "title": "Free Puppy",
+    "postingDate": "August 20, 2018",
+    "details": "Does anyone want my puppy?",
+    "photo": true,
+    "category": "services",
+    "address": "123 Ryan's House St. Lonely,OR"
+  }, {
+    "id": 3,
+    "title": "Free Dirt",
+    "postingDate": "August 20, 2018",
+    "details": "Does anyone want some dirt, includes cat dropping nutrient fertilizer?",
+    "photo": true,
+    "category": "services",
+    "address": "123 Ryan's House St. Lonely,OR"   
+  }, {
+    "id": 4,
+    "title": "Door Needed",
+    "postingDate": "August 20, 2018",
+    "details": "My door is broken, and it's a piece of plywood. Help!",
+    "photo": true,
+    "category": "services",
+    "address": "123 Ryan's House St. Lonely,OR"   
+  }, {
+    "id": 5,
+    "title": "Crazy Neighbor",
+    "postingDate": "August 20, 2018",
+    "details": "My neighbor is crazy!! Help!",
+    "photo": true,
+    "category": "services",
+    "address": "123 Ryan's House St. Lonely,OR"      
+  }, {
+    "id": 6,
+    "title": "I love walnuts",
+    "postingDate": "August 20, 2018",
+    "details": "Let me tell you about the power of walnuts",
+    "photo": true,
+    "category": "services",
+    "address": "456 Devin's Mom's House Ave. Washedup,OR"  
+  }, {
+    "id": 7,
+    "title": "Want to see what's in my jar",
+    "postingDate": "August 20, 2018",
+    "details": "Don't be scared, it's healthy mold",
+    "photo": true,
+    "category": "services",
+    "address": "456 Devin's Mom's House Ave. Washedup,OR" 
+  }, {
+    "id": 8,
+    "title": "Make granola with me!",
+    "postingDate": "August 20, 2018",
+    "details": "Does anyone want to make granola with me?",
+    "photo": true,
+    "category": "community",
+    "address": "456 Devin's Mom's House Ave. Washedup,OR" 
+  }, {
+    "id": 9,
+    "title": "Take a walk together",
+    "postingDate": "August 20, 2018",
+    "details": "Lets put on our hipster jeans and walk Hawthorne!!",
+    "photo": true,
+    "category": "community",
+    "address": "456 Devin's Mom's House Ave. Washedup,OR" 
+  }, {
+    "id": 10,
+    "title": "Sweat it out with me",
+    "postingDate": "August 20, 2018",
+    "details": "My AC sucks, come sweat with me..",
+    "photo": true,
+    "category": "community",
+    "address": "789 Elly's House Blvd. Curly,OR"     
+  }, {
+    "id": 11,
+    "title": "My jelly donut is leaking!!",
+    "postingDate": "August 20, 2018",
+    "details": "Does anyone know how to get a stain out of my pineapple shirt?",
+    "photo": true,
+    "category": "community",
+    "address": "789 Elly's House Blvd. Curly,OR"   
+  }, {
+    "id": 12,
+    "title": "My bike squeaks",
+    "postingDate": "August 20, 2018",
+    "details": "My AC sucks, come sweat with me..",
+    "photo": true,
+    "category": "community",
+    "address": "789 Elly's House Blvd. Curly,OR"     
+  }]
+}

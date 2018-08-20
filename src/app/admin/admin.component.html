@@ -1,0 +1,38 @@
+<h2>New Listing</h2>
+<div>
+  <div>
+    <label>Date: </label>
+    <br>
+    <input type="date" #newDate>
+  </div>
+  <div>
+    <label>Title: </label>
+    <br>
+    <input #newTitle>
+  </div>
+  <div>
+    <label>Details: </label>
+    <br>
+    <input #newDetails>
+  </div>
+  <div>
+    <label>Photo: </label>
+    <br>
+    <input #newPhoto>
+  </div>
+  <div>
+    <label>Category: </label>
+    <br>
+    <input #newCategory>
+  </div>
+  <div>
+    <label>Address: </label>
+    <br>
+    <input #newAddress>
+  </div>
+  <button 
+    (click)="submitForm(newDate.value, newTitle.value, newDetails.value, newPhoto.value, newCategory.value, newAddress.value); 
+    newDate.value=''; newTitle.value=''; newDetails.value=''; newPhoto.value=''; newCategory.value=''; newAddress.value=''">Submit
+  </button>
+</div>
+

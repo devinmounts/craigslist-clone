@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { CommunityPipe } from './community.pipe';
 import { ServicesPipe } from './services.pipe';
 import { ServicesComponent } from './services/services.component';
 import { ServicesDetailsComponent } from './services-details/services-details.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 export const firebaseConfig = {
@@ -34,13 +36,15 @@ export const firebaseConfig = {
     CommunityPipe,
     ServicesComponent,
     ServicesDetailsComponent,
-    ServicesPipe
+    ServicesPipe,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

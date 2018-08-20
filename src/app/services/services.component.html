@@ -1,10 +1,10 @@
-<app-navbar></app-navbar>
+<!-- <app-navbar></app-navbar> -->
 <div class="grid-container">
     <div class="sidebar">
       <p>SideBar</p>
     </div>
     <div class="listings">
-      <p *ngFor="let listing of listings | servicesposting"><span>{{listing.postingDate.toLocaleString('en-us', { month: "short", day: "numeric" })}} </span> <a (click)="goToDetails(listing)">{{listing.title}}</a> <span *ngIf="listing.photo" class="pic-bool">pic</span></p>
+      <p *ngFor="let listing of listings | async | servicesposting"><span>{{listing.postingDate.toLocaleString('en-us', { month: "short", day: "numeric" })}} </span> <a (click)="goToDetails(listing)">{{listing.title}}</a> <span *ngIf="listing.photo" class="pic-bool">pic</span></p>
     </div>
   </div>
 

@@ -5,6 +5,7 @@ import { CommunityComponent } from './community/community.component';
 import { DetailsComponent } from './details/details.component';
 import { ServicesComponent } from './services/services.component';
 import { ServicesDetailsComponent } from './services-details/services-details.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 const appRoutes: Routes = [
@@ -27,6 +28,10 @@ const appRoutes: Routes = [
     {
         path: 'services/:id',
         component: ServicesDetailsComponent
+    },
+    {
+        path: 'admin',
+        component: AdminComponent
     }
    
 ];

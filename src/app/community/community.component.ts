@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ListingsService } from '../listings.service';
 import { Listing } from '../models/listing.model';
 import { Router } from '@angular/router';
+import { FirebaseListObservable } from 'angularfire2/database';
+
 
 @Component({
   selector: 'app-community',
@@ -10,7 +12,7 @@ import { Router } from '@angular/router';
   providers: [ListingsService]
 })
 export class CommunityComponent implements OnInit {
-  listings: Listing[];
+  listings: FirebaseListObservable <any[]>;
 
   constructor(private listingsService: ListingsService, private router: Router) { }
 
@@ -18,8 +20,8 @@ export class CommunityComponent implements OnInit {
     this.listings = this.listingsService.getListings();
   }
 
-  goToDetails(clickedListing: Listing){
-    this.router.navigate(['community', clickedListing.id])
+  goToDetails(clickedListing){
+    this.router.navigate(['community', clickedListing.$key])
   }
 
 }
