@@ -17,6 +17,7 @@ import { ServicesPipe } from './services.pipe';
 import { ServicesComponent } from './services/services.component';
 import { ServicesDetailsComponent } from './services-details/services-details.component';
 import { AdminComponent } from './admin/admin.component';
+import { EditListingComponent } from './edit-listing/edit-listing.component';
 
 
 export const firebaseConfig = {
@@ -37,7 +38,8 @@ export const firebaseConfig = {
     ServicesComponent,
     ServicesDetailsComponent,
     ServicesPipe,
-    AdminComponent
+    AdminComponent,
+    EditListingComponent
   ],
   imports: [
     BrowserModule,

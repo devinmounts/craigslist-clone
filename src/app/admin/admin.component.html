@@ -30,9 +30,10 @@
     <br>
     <input #newAddress>
   </div>
-  <button 
-    (click)="submitForm(newDate.value, newTitle.value, newDetails.value, newPhoto.value, newCategory.value, newAddress.value); 
+  <button
+    (click)="submitForm(newDate.value, newTitle.value, newDetails.value, newPhoto.value, newCategory.value, newAddress.value);
     newDate.value=''; newTitle.value=''; newDetails.value=''; newPhoto.value=''; newCategory.value=''; newAddress.value=''">Submit
   </button>
+  <app-community></app-community>
+  <app-services></app-services>
 </div>
-

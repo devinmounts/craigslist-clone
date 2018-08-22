@@ -1,0 +1,35 @@
+<h2>Edit Listing</h2>
+<div>
+  <div>
+    <label> New Date: </label>
+    <br>
+    <input [(ngModel)]="selectedListing.data" type="date">
+  </div>
+  <div>
+    <label>New Title: </label>
+    <br>
+    <input [(ngModel)]="selectedListing.title">
+  </div>
+  <div>
+    <label> New Details: </label>
+    <br>
+    <input [(ngModel)]="selectedListing.details">
+  </div>
+  <div>
+    <label> New Photo: </label>
+    <br>
+    <input [(ngModel)]="selectedListing.photo">
+  </div>
+  <div>
+    <label> New Category: </label>
+    <br>
+    <input [(ngModel)]="selectedListing.category">
+  </div>
+  <div>
+    <label>New Address: </label>
+    <br>
+    <input [(ngModel)]="selectedListing.address">
+  </div>
+
+  <button (click)="beginUpdatingListing(selectedListing)">Update</button>
+  <button (click)="beginDeletingListing(selectedListing)">Delete</button>

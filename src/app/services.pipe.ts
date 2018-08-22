@@ -9,12 +9,14 @@ import { Listing } from './models/listing.model';
 export class ServicesPipe implements PipeTransform{
   transform(input: Listing[]){
     let output: Listing[]= [];
-    for(let i = 0; i<input.length; i++){
-      if(input[i].category === "services"){
-        output.push(input[i]);
+    if(input){
+      for(let i = 0; i<input.length; i++){
+        if(input[i].category === "services"){
+          output.push(input[i]);
+        }
       }
     }
-    return output;    
+    return output;
   }
 
 }

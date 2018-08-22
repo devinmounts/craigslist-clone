@@ -13,11 +13,13 @@ import { FirebaseListObservable } from 'angularfire2/database';
 })
 export class CommunityComponent implements OnInit {
   listings: FirebaseListObservable <any[]>;
+  currentRoute: string = this.router.url;
 
   constructor(private listingsService: ListingsService, private router: Router) { }
 
   ngOnInit() {
     this.listings = this.listingsService.getListings();
+    console.log(this.router.url);
   }
 
   goToDetails(clickedListing){

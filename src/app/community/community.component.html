@@ -4,9 +4,15 @@
       <p>SideBar</p>
     </div>
     <div class="listings">
-      <p *ngFor="let listing of listings | async | communityposting"><span>{{listing.postingDate.toLocaleString('en-us', { month: "short", day: "numeric" })}} </span> <a (click)="goToDetails(listing)">{{listing.title}}</a> <span *ngIf="listing.photo" class="pic-bool">pic</span></p>
+      <div *ngFor="let listing of listings | async | communityposting">
+        <span>{{listing.postingDate.toLocaleString('en-us', { month: "short", day: "numeric" })}} </span>
+        <h2 (click)="goToDetails(listing)">{{listing.title}}</h2>
+      <span *ngIf="listing.photo" class="pic-bool">pic</span>
+      <div *ngIf="currentRoute === '/admin'">
+          <p>{{listing.details}}</p>
+          <app-edit-listing [selectedListing]="listing"></app-edit-listing>
+      </div>
+
+    </div>
     </div>
   </div>
-
-
-  
